@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.gradle/
+.m2/
+
+# Build outputs
+dist/
+build/
+target/
+out/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Temporal
+.tmp/
+*.tmp
+
+# Subrepositories (manejados independientemente)
+atleta-app/node_modules/
+atleta-app/dist/
+atleta-app/www/
+atleta-app/logs/
+atleta-server/target/
+atleta-server/logs/
