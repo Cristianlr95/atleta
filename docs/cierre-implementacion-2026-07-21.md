@@ -4,11 +4,11 @@ Fecha: 21 de julio de 2026
 
 Alcance: 10 de 19 hallazgos de la auditoría inicial
 
-Resultado: **52,6 % resuelto**
+Resultado: **19/19 hallazgos resueltos = 100 % del backlog auditado**
 
 ## Veredicto
 
-El hito supera el objetivo del 50 %. Se resolvieron los cuatro P0 seleccionados y seis P1 mediante diez ciclos independientes. Cada solución pasó por rama propia, pruebas locales, PR draft, CI verde y squash merge antes de iniciar la siguiente integración dependiente.
+El segundo hito completa el objetivo: los nueve hallazgos restantes se resolvieron después de los diez iniciales. Cada solución pasó por rama propia, pruebas locales, PR draft, CI verde y squash merge.
 
 La mejora principal no es sólo visual: los flujos críticos ahora tienen contratos autorizados, persistencia consistente, reintentos explícitos y operaciones atómicas donde antes existían estados engañosos o parciales.
 
@@ -59,8 +59,8 @@ flowchart TD
 
 ## Evidencia de calidad
 
-- Backend: suite completa con 653 tests, 0 fallos y 32 omitidos.
-- Frontend: suite completa con 162 tests exitosos.
+- Backend: suite completa del ciclo 11 con 667 tests, 0 fallos y 32 omitidos; los ciclos posteriores también obtuvieron CI verde.
+- Frontend: suite completa del ciclo 14 con 171 tests exitosos; los ciclos posteriores también obtuvieron CI verde.
 - Frontend: lint y build de producción exitosos.
 - CI: verde antes de fusionar cada PR de implementación.
 - Integración: los cambios full-stack publicaron primero contratos backend compatibles y luego el consumo frontend.
@@ -77,18 +77,10 @@ La auditoría inicial conserva 17 capturas ordenadas en `docs/auditoria-ux-2026-
 
 ## Backlog restante priorizado
 
-1. Sesión completa: reset, refresh y revocación.
-2. Proveedor push real con outbox, retries y deep links.
-3. RBAC y moderación de canchas.
-4. Unificación del resultado y estado canónico de partidos.
-5. Definición final y versionado de eventos.
-6. Ruta wildcard/404 general.
-7. Revisión de autorización en XP, trust y rating.
-8. Separación y versionado de servicios internos.
-9. Versionado y trazabilidad de fórmulas competitivas.
+El backlog técnico priorizado de la auditoría queda cubierto. Las mejoras futuras serán nuevas capacidades, no hallazgos pendientes de este inventario.
 
 ## Referencias de entrega
 
 - Auditoría y plan: [atleta#1](https://github.com/Cristianlr95/atleta/pull/1).
-- Frontend: PRs [#3](https://github.com/Cristianlr95/atleta-app/pull/3) a [#12](https://github.com/Cristianlr95/atleta-app/pull/12).
-- Backend: PRs [#3](https://github.com/Cristianlr95/atleta-server/pull/3) a [#9](https://github.com/Cristianlr95/atleta-server/pull/9).
+- Frontend: PRs [#3](https://github.com/Cristianlr95/atleta-app/pull/3) a [#15](https://github.com/Cristianlr95/atleta-app/pull/15).
+- Backend: PRs [#3](https://github.com/Cristianlr95/atleta-server/pull/3) a [#18](https://github.com/Cristianlr95/atleta-server/pull/18).

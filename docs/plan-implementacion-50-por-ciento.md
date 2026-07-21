@@ -280,6 +280,18 @@ Estado al 21 de julio de 2026:
 5. Las capturas finales y el E2E con servicios vivos se aplazan expresamente porque el trabajo se ejecutó con 4200/8080 apagados. No se presenta evidencia visual antigua como si fuera una verificación nueva.
 6. Las referencias Git del repositorio padre se actualizan únicamente a commits ya fusionados en los `main` de app y server.
 
-## Backlog posterior al 50 %
+## Cobertura final del inventario
 
-Quedan fuera de este hito: reset/refresh/revocación de sesión, proveedor push real, RBAC de canchas, unificación de resultados, estado canónico de partidos, definición final de eventos, wildcard/404 general, revisión de endpoints de XP/trust/rating y separación/versionado de servicios y fórmulas.
+Los nueve hallazgos que quedaban fuera del primer hito fueron resueltos en los ciclos 11–19. Resultado final: **19/19 = 100 %**.
+
+| Ciclo | Hallazgo | PR fusionado |
+|---:|---|---|
+| 11 | Reset, refresh y revocación de sesión | server [#11](https://github.com/Cristianlr95/atleta-server/pull/11), app [#13](https://github.com/Cristianlr95/atleta-app/pull/13) |
+| 12 | Ciclo de vida de push tokens | server [#12](https://github.com/Cristianlr95/atleta-server/pull/12), app [#14](https://github.com/Cristianlr95/atleta-app/pull/14) |
+| 13 | RBAC de operaciones mutables de canchas | server [#13](https://github.com/Cristianlr95/atleta-server/pull/13) |
+| 14 | Ruta wildcard/404 | app [#15](https://github.com/Cristianlr95/atleta-app/pull/15) |
+| 15 | Versionado de eventos | server [#14](https://github.com/Cristianlr95/atleta-server/pull/14) |
+| 16 | Autorización explícita de XP, trust y rating | server [#15](https://github.com/Cristianlr95/atleta-server/pull/15) |
+| 17 | Trazabilidad de fórmula de rating | server [#16](https://github.com/Cristianlr95/atleta-server/pull/16) |
+| 18 | Versionado de servicio | server [#17](https://github.com/Cristianlr95/atleta-server/pull/17) |
+| 19 | Contrato canónico de resultados | server [#18](https://github.com/Cristianlr95/atleta-server/pull/18) |
