@@ -1,5 +1,7 @@
 # Auditoría funcional y UX de Atleta
 
+> Actualización del 21 de julio de 2026: se implementaron y fusionaron 10 de los 19 hallazgos (52,6 %). La comparación final, evidencia de calidad y backlog están en [`cierre-implementacion-2026-07-21.md`](cierre-implementacion-2026-07-21.md).
+
 Fecha: 2026-07-21  
 Alcance: frontend Ionic/Angular, API Spring Boot, navegación móvil y escritorio, contratos FE/BE y flujos principales.  
 Entorno auditado: backend con perfil `test` sobre H2 efímero y frontend de desarrollo. No se modificó PostgreSQL local.

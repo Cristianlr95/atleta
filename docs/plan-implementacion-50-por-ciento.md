@@ -230,20 +230,20 @@ Criterios de aceptación:
 
 ## Cobertura alcanzada
 
-| # | Hallazgo | Prioridad | Estado inicial |
-|---:|---|---|---|
-| 1 | Logout visible | P0 | Pendiente |
-| 2 | Layout desktop/onboarding responsive | P0 | Pendiente |
-| 3 | Guard onboarding fail-safe | P1 | Pendiente |
-| 4 | Navegación real de perfil/equipo | P1 | Pendiente |
-| 5 | Leaderboard de equipo autorizado | P0 | Pendiente |
-| 6 | SSE autenticado | P0 | Pendiente |
-| 7 | MatchType persistido | P1 | Pendiente |
-| 8 | Creación de partido atómica/idempotente | P1 | Pendiente |
-| 9 | Error y retry de invitaciones | P1 | Pendiente |
-| 10 | Edición de perfil y posiciones | P1 | Pendiente |
+Hito completado el 21 de julio de 2026: **10/19 hallazgos resueltos = 52,6 %**.
 
-Al completar la tabla: 10/19 = 52,6 %.
+| # | Hallazgo | Prioridad | Estado final | PRs fusionados |
+|---:|---|---|---|---|
+| 1 | Logout visible | P0 | Resuelto | app [#3](https://github.com/Cristianlr95/atleta-app/pull/3) |
+| 2 | Layout desktop/onboarding responsive | P0 | Resuelto | app [#4](https://github.com/Cristianlr95/atleta-app/pull/4) |
+| 3 | Guard onboarding fail-safe | P1 | Resuelto | app [#5](https://github.com/Cristianlr95/atleta-app/pull/5) |
+| 4 | Navegación real de perfil/equipo | P1 | Resuelto | server [#3](https://github.com/Cristianlr95/atleta-server/pull/3), app [#6](https://github.com/Cristianlr95/atleta-app/pull/6) |
+| 5 | Leaderboard de equipo autorizado | P0 | Resuelto | server [#4](https://github.com/Cristianlr95/atleta-server/pull/4), app [#7](https://github.com/Cristianlr95/atleta-app/pull/7) |
+| 6 | SSE autenticado | P0 | Resuelto | server [#5](https://github.com/Cristianlr95/atleta-server/pull/5), app [#8](https://github.com/Cristianlr95/atleta-app/pull/8) |
+| 7 | MatchType persistido | P1 | Resuelto | server [#6](https://github.com/Cristianlr95/atleta-server/pull/6), app [#9](https://github.com/Cristianlr95/atleta-app/pull/9) |
+| 8 | Creación de partido atómica/idempotente | P1 | Resuelto | server [#7](https://github.com/Cristianlr95/atleta-server/pull/7), app [#10](https://github.com/Cristianlr95/atleta-app/pull/10) |
+| 9 | Error y retry de invitaciones | P1 | Resuelto | server [#8](https://github.com/Cristianlr95/atleta-server/pull/8), app [#11](https://github.com/Cristianlr95/atleta-app/pull/11) |
+| 10 | Edición de perfil y posiciones | P1 | Resuelto | server [#9](https://github.com/Cristianlr95/atleta-server/pull/9), app [#12](https://github.com/Cristianlr95/atleta-app/pull/12) |
 
 ## Gates de calidad
 
@@ -271,15 +271,14 @@ Full-stack:
 
 ## Cierre del hito
 
-Después del ciclo 10:
+Estado al 21 de julio de 2026:
 
-1. Ejecutar la regresión backend completa y los E2E críticos de frontend.
-2. Repetir las capturas de los flujos modificados.
-3. Comparar auditoría inicial versus estado final.
-4. Actualizar en `Cristianlr95/atleta` las referencias Git de app y server.
-5. Abrir el PR de integración del repositorio padre.
-6. Mergearlo sólo cuando ambos repositorios hoja apunten a commits ya presentes en sus `main`.
-7. Publicar el resultado: 10/19 resueltos y backlog restante ordenado para el siguiente hito.
+1. Regresión backend completa: 653 tests, 0 fallos y 32 omitidos.
+2. Regresión frontend completa: 162 tests exitosos, lint y build de producción verdes.
+3. Los 17 PRs de implementación se abrieron como draft, pasaron CI y se fusionaron individualmente mediante squash.
+4. La comparación inicial/final y la trazabilidad quedan en `docs/cierre-implementacion-2026-07-21.md`.
+5. Las capturas finales y el E2E con servicios vivos se aplazan expresamente porque el trabajo se ejecutó con 4200/8080 apagados. No se presenta evidencia visual antigua como si fuera una verificación nueva.
+6. Las referencias Git del repositorio padre se actualizan únicamente a commits ya fusionados en los `main` de app y server.
 
 ## Backlog posterior al 50 %
 
