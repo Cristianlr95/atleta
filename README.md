@@ -32,6 +32,7 @@ El proyecto esta separado en dos aplicaciones principales:
 Atleta/
   atleta-app/       # Frontend Ionic/Angular
   atleta-server/    # Backend Spring Boot
+  docker-compose.yml # Entorno full-stack integrado
 ```
 
 ### Frontend
@@ -47,6 +48,17 @@ Requisitos generales:
 - Node.js 20 o superior
 - npm
 - Docker Desktop o PostgreSQL local
+
+### Opción integrada (recomendada)
+
+```powershell
+Copy-Item .env.example .env
+docker compose up --build
+```
+
+El frontend queda en `http://localhost:4201`, la API en `http://localhost:8080`
+y PostgreSQL en `localhost:5432`. El `.env` generado es solo local y no se debe
+versionar.
 
 ### 1. Levantar backend
 
@@ -103,6 +115,8 @@ http://localhost:8080/api/v1
 - [Funcionalidades frontend](atleta-app/docs/funcionalidades.md)
 - [Arquitectura backend](atleta-server/docs/architecture.md)
 - [Funcionalidades backend](atleta-server/docs/funcionalidades.md)
+- [ATLETA AI: resumen post-partido](docs/ai-match-summary.md)
+- [Arquitectura objetivo GCP/Vertex AI](docs/gcp-architecture.md)
 
 ## Estado del proyecto
 Proyecto en desarrollo avanzado. Los flujos principales de autenticacion, perfil, equipos, partidos, cierre, MVP, ratings y leaderboard estan implementados entre frontend y backend. Todavia existen funcionalidades parciales y deuda tecnica documentada antes de considerarlo listo para produccion.
