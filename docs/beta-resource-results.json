@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-24",
+  "environment": "Local Docker Desktop Linux; PostgreSQL 16; Eclipse Temurin 21.0.12.1",
+  "memoryLimitMiB": 512,
+  "swapEnabled": false,
+  "cpuQuota": 0.1,
+  "baseline": {
+    "startupSeconds": 189.189,
+    "memoryPeakMiB": 352.6,
+    "requests": 420,
+    "profileReadConcurrency": 4,
+    "p95Ms": 1800,
+    "maxMs": 3194,
+    "restarts": 0,
+    "oomEvents": 0,
+    "result": "PASS"
+  },
+  "final": {
+    "additionalJvmOption": "-XX:TieredStopAtLevel=1",
+    "startupSeconds": 110.997,
+    "memoryPeakMiB": 300.5,
+    "requests": 420,
+    "profileReadConcurrency": 4,
+    "p95Ms": 899,
+    "maxMs": 3992,
+    "restarts": 0,
+    "oomEvents": 0,
+    "result": "PASS"
+  },
+  "limitations": [
+    "Not deployed on Render; Neon TLS and regional latency untested",
+    "Small synthetic database; no full-match lifecycle or sustained capacity test"
+  ]
+}

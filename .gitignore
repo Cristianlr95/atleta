@@ -34,6 +34,7 @@ npm-debug.log*
 # Temporal
 .tmp/
 *.tmp
+.playwright-cli/
 
 # Subrepositories (manejados independientemente)
 atleta-app/node_modules/

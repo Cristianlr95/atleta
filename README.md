@@ -107,6 +107,7 @@ http://localhost:8080/api/v1
 ```
 
 ## Documentacion relacionada
+- [Despliegue beta: Cloudflare Pages + Render + Neon](docs/beta-deployment.md)
 - [README del frontend](atleta-app/README.md)
 - [README del backend](atleta-server/README.md)
 - [Documentacion de API](atleta-server/api/README.md)
