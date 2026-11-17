@@ -1,0 +1,6 @@
+[submodule "atleta-app"]
+	path = atleta-app
+	url = https://github.com/Cristianlr95/atleta-app.git
+[submodule "atleta-server"]
+	path = atleta-server
+	url = https://github.com/Cristianlr95/atleta-server.git
